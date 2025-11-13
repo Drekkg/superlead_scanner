@@ -1,3 +1,5 @@
+
+
 document.getElementById("barcode").addEventListener("keydown", (event) => {
   let barcode_value = document.getElementById("barcode").value;
   if (event.key === "Enter") {
@@ -12,7 +14,7 @@ document.getElementById("barcode").addEventListener("keydown", (event) => {
 
 
 
-  
+
 });
 
 // const currentDate = new Date().toISOString().slice(0, 10);

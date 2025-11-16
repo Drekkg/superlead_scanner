@@ -3,7 +3,6 @@ const currentDate = new Date().toISOString().slice(0, 10);
 let barcode_id = 0;
 let scanned_items = {};
 let technician = [];
-let date
 
 
 document.getElementById("technician").addEventListener("keydown", (event) => {

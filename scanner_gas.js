@@ -8,6 +8,10 @@ let technician = [];
 document.getElementById("technician").addEventListener("keydown", (event) => {
   let technician_value = document.getElementById("technician").value;
   if (event.key === "Enter" && technician_value) {
+    if (/\d/.test(technician_value)) {
+      alert("Ungültige Eingabe: Der Technikerwert darf keine Zahlen enthalten.");
+      location.reload();
+    }
     const technician_html = document.createElement("h4");
     technician_html.textContent = `Techniker: ${technician_value}  Datum: ${currentDate}`;
     document.getElementById("barcode-container").appendChild(technician_html);
